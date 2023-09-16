@@ -1,0 +1,407 @@
+
+/* ------------------- Body Tags ------------------- */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  position: relative;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color:ghostwhite;
+  color: black;
+}
+
+header {
+  height: 80pt;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+h1 {
+  font-size: 400%;
+  color: lavender;
+  margin-top: 10pt;
+  margin-left: 30pt;
+}
+
+nav ul {
+  text-align: right;
+  margin-right: 30pt;
+}
+
+nav ul li {
+  display: inline;
+  padding: 10px;
+  list-style-type: none;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+h2 {
+  font-size: 600%;
+  margin-top: 10pt;
+  margin-bottom: 50pt;
+  margin-right: 30pt;
+  display: flex;
+  justify-content: flex-end;
+}
+
+h4 {
+  font-size: 350%;
+  margin-left: 40pt;
+  margin-top: 70pt;
+  margin-bottom: 40pt;
+}
+
+p {
+  margin-right: 30pt;
+  color: grey;
+}
+
+div ul li {
+  display: inline;
+  justify-content: space-between;
+  margin-right: 10%;
+  padding-bottom: 5%;
+  font-size: 120%;
+}
+
+
+
+
+/* ------------------- Classes ------------------- */
+
+.display-block {
+  display: block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.work-image {
+  width: 400px;
+  height: 400px;
+  display: inline;
+  justify-content: space-between;
+  background-color: black;
+  margin-left: 30pt;
+  margin-top: 10pt;
+  padding: 20px;
+}
+
+.work-image:hover {
+  width: 400px;
+  height: 400px;
+  display: inline;
+  justify-content: space-between;
+  background-color: black;
+  margin-left: 30pt;
+  margin-top: 10pt;
+  padding: 20px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.contact-me-links {
+  margin-left: 30pt;
+  padding: 10px;
+  justify-content: space-between;
+  font-size: 150%;
+  color: grey;  
+}
+
+.contact-me-links:hover {
+  color: var(--blue);
+}
+
+
+/* ------------------- ID's ------------------- */
+
+
+#main-image {
+  width: 100%;
+  height: auto;
+}
+
+#MY-PORTFOLIO {
+  position: relative;
+}
+
+#PORTFOLIO-Title {
+  position: absolute;
+  right: 30pt;
+  top: 300pt;
+  background-color: lavender;
+  padding: 10pt;
+}
+
+#ABOUTME-Paragraph {
+  display: block;
+  border-top: 5pt, solid, black;
+  margin-left: 40pt;
+  margin-right: 400pt;
+}
+
+#PHOTOGRAPHY-Header {
+  width: 160pt;
+  height: 50pt;
+  padding: 30px;
+  position: absolute;
+  left: 30pt;
+  bottom: 200pt;
+  background-color: black;
+  color: lavender;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+#PHOTOGRAPHY-Header:hover {
+  width: 160pt;
+  height: 50pt;
+  padding: 30px;
+  position: absolute;
+  left: 30pt;
+  bottom: 200pt;
+  background-color: black;
+  color: greenyellow;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+#WORK-Header {
+  width: 90pt;
+  height: 50pt;
+  padding: 30px;
+  position: absolute;
+  left: 370pt;
+  bottom: 200pt;
+  background-color: black;
+  color: lavender;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+#WORK-Header:hover {
+  width: 90pt;
+  height: 50pt;
+  padding: 30px;
+  position: absolute;
+  left: 370pt;
+  bottom: 200pt;
+  background-color: black;
+  color: greenyellow;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+#GITLAB-Header {
+  width: 160pt;
+  height: 50pt;
+  padding: 30px;
+  position: absolute;
+  left: 700pt;
+  bottom: 200pt;
+  background-color: black;
+  color: lavender;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+#GITLAB-Header:hover {
+  width: 160pt;
+  height: 50pt;
+  padding: 30px;
+  position: absolute;
+  right: 220pt;
+  bottom: 200pt;
+  background-color: black;
+  color: greenyellow;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+
+/* ------------------- Media Query's ------------------- */
+
+@media screen and (max-width: 1330px) {
+
+  #PORTFOLIO-Title {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: lavender;
+  padding: 10pt;
+  }
+
+
+  h4 {
+  font-size: 350%;
+  position: relative;
+  text-align: center;
+  }
+  
+  #ABOUTME-Paragraph {
+  display: block;
+  position: relative;
+  font-size: 120%;
+  border-top: 5pt, solid, black;
+  margin-left: 100pt;
+  margin-right: 100pt;
+  align-items: center;
+  text-align: center;
+  }
+
+  .work-image {
+  width: 600px;
+  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  background-color: lavender;
+  padding: 20px;
+  }
+
+  .work-image:hover {
+  width: 600px;
+  height: 600px;
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 0px;
+  padding: 20px;
+  }
+
+  #PHOTOGRAPHY-Header {
+  width: 600px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100pt;
+  background-color: lavender;
+  color: black;
+  padding: 20px;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 160%;
+}
+
+#PHOTOGRAPHY-Header:hover {
+  width: 600px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100pt;
+  background-color: black;
+  color: greenyellow;
+  padding: 20px;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 160%
+}
+
+#WORK-Header {
+  width: 600px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100pt;
+  background-color: lavender;
+  color: black;
+  padding: 20px;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 160%;
+}
+
+#WORK-Header:hover {
+  width: 600px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100pt;
+  background-color: black;
+  color: greenyellow;
+  padding: 20px;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 160%
+}
+
+#GITLAB-Header {
+  width: 600px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100pt;
+  background-color: lavender;
+  color: black;
+  padding: 20px;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 160%;
+}
+
+#GITLAB-Header:hover {
+  width: 600px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100pt;
+  background-color: black;
+  color: greenyellow;
+  padding: 20px;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 160%
+}
+
+.contact-me-links {
+  margin-left: 30pt;
+  justify-content: space-between;
+  font-size: 150%;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+}
+
+.contact-me-links:hover {
+  color:crimson;
+}
+
+}
